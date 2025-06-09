@@ -12,7 +12,7 @@ export default function App() {
     setError("");
     setVideo(null);
     try {
-      const res = await axios.post("https://your-backend-url/download", { link: url });
+      const res = await axios.post("https://alldownload-syr0.onrender.com/", { link: url });
       setVideo(res.data);
     } catch (err) {
       setError("❌ Failed to download video. Try another link.");
